@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'PM App',
+      debugShowCheckedModeBanner: false,
       onGenerateRoute: (routeSettings) {
         return MaterialPageRoute(builder: routes[routeSettings.name]!);
       },
