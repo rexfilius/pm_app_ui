@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       onGenerateRoute: (routeSettings) {
         return MaterialPageRoute(builder: routes[routeSettings.name]!);
       },
-      home: HomeScreen(),
+      home: const GetStartedScreen(),
     );
   }
 }
