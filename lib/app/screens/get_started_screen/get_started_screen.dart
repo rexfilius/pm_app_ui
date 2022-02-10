@@ -7,6 +7,7 @@ import 'package:pm_app_ui/app/screens/screens.dart';
 /// 1. purple #3C30A6 #3d35a4
 /// 2. red #fd3f97
 /// 3. lower purple #39349f
+/// 4. task card color #e5e5e5
 class GetStartedScreen extends StatelessWidget {
   const GetStartedScreen({Key? key}) : super(key: key);
 
