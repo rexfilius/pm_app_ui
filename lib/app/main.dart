@@ -12,12 +12,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'PM App',
+      title: 'PM App-UI',
       debugShowCheckedModeBanner: false,
       onGenerateRoute: (routeSettings) {
         return MaterialPageRoute(builder: routes[routeSettings.name]!);
       },
-      home: const GetStartedScreen(),
+      home: const NavScreen(),
     );
   }
 }

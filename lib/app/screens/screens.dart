@@ -1,5 +1,10 @@
 export 'get_started_screen/get_started_screen.dart';
 
+/// For classes related to the Nav Screen
+export 'nav_screen/nav_screen.dart';
+export 'nav_screen/nav_screen_item.dart';
+export 'nav_screen/nav_screen_item_list.dart';
+
 /// For classes related to the HomeScreen
 export 'home_screen/home_screen.dart';
 export 'home_screen/home_screen_app_bar.dart';
