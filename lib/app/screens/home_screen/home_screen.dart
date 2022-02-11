@@ -23,7 +23,7 @@ class HomeScreen extends StatelessWidget {
               topRight: Radius.circular(32.0),
             ),
           ),
-          child: ListView(
+          child: Column(
             children: const [
               HomeScreenHeader(
                 firstTitle: 'Recent Tasks',
@@ -41,3 +41,24 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
+
+/// bottomNavigationBar: BottomNavigationBar(
+//         items: const [
+//           BottomNavigationBarItem(
+//             icon: Icon(Icons.home_filled),
+//             label: 'Home',
+//           ),
+//           BottomNavigationBarItem(
+//             icon: Icon(Icons.check_box_outlined),
+//             label: 'My Tasks',
+//           ),
+//           BottomNavigationBarItem(
+//             icon: Icon(Icons.search_rounded),
+//             label: 'Search',
+//           ),
+//           BottomNavigationBarItem(
+//             icon: Icon(Icons.notifications),
+//             label: 'Inbox',
+//           ),
+//         ],
+//       ),
