@@ -20,7 +20,11 @@ export 'home_screen/project_card/project_card_chip_list.dart';
 export 'home_screen/project_card/project_card_progress_bar.dart';
 
 /// For classes related the ProjectDetailScreen
-export 'project_detail_screen/project_detail_screen.dart';
-export 'project_detail_screen/project_detail_app_bar.dart';
+export 'project_detail/project_detail_screen.dart';
+export 'project_detail/project_detail_app_bar.dart';
+export 'project_detail/project_detail_body/project_detail_body.dart';
+export 'project_detail/project_detail_body/project_detail_attachment.dart';
+export 'project_detail/project_detail_body/project_detail_header_title.dart';
+export 'project_detail/project_detail_body/project_detail_header_data.dart';
 
 /// For utility classes related to the screens
