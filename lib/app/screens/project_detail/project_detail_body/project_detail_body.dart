@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pm_app_ui/app/screens/project_detail/project_detail_body/project_detail_header_data.dart';
-import 'package:pm_app_ui/app/screens/project_detail/project_detail_body/project_detail_header_title.dart';
+import 'package:pm_app_ui/app/screens/screens.dart';
 
 class ProjectDetailBody extends StatelessWidget {
   const ProjectDetailBody({Key? key}) : super(key: key);
@@ -14,6 +13,21 @@ class ProjectDetailBody extends StatelessWidget {
           ProjectDetailHeaderTitle(),
           SizedBox(height: 16.0),
           ProjectDetailHeaderData(),
+          Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Align(
+              alignment: Alignment.centerLeft,
+              child: Text('Subtasks'),
+            ),
+          ),
+          TaskCardList(),
+          Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Align(
+              alignment: Alignment.centerLeft,
+              child: Text('Attachment'),
+            ),
+          ),
         ],
       ),
     );
