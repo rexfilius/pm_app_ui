@@ -20,6 +20,10 @@ class ProjectDetailAttachment extends StatelessWidget {
         Image.asset('assets/pdf_icon.png'),
         Image.asset('assets/pdf_icon.png'),
         Image.asset('assets/pdf_icon.png'),
+        Image.asset('assets/pdf_icon.png'),
+        Image.asset('assets/pdf_icon.png'),
+        Image.asset('assets/pdf_icon.png'),
+        Image.asset('assets/pdf_icon.png'),
       ],
     );
   }

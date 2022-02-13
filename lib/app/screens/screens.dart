@@ -3,6 +3,7 @@ export 'get_started_screen/get_started_screen.dart';
 /// For classes with common widgets used across Screens
 export 'common_widgets/task_card.dart';
 export 'common_widgets/task_card_list.dart';
+export 'common_widgets/task_card_shape.dart';
 
 /// For classes related to the Nav Screen
 export 'nav_screen/nav_screen.dart';

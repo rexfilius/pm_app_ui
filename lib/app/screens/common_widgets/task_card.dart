@@ -1,5 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:pm_app_ui/app/screens/common_widgets/task_card_shape.dart';
 
 class TaskCard extends StatelessWidget {
   final String taskTitle;
@@ -24,21 +24,16 @@ class TaskCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      shape: const RoundedRectangleBorder(
-        side: BorderSide(
-          color: Colors.black,
-          style: BorderStyle.solid,
-        ),
-        borderRadius: BorderRadius.all(Radius.circular(16.0)),
+      shape: TaskCardShape.roundRectangleBorder(
+        color: Colors.black,
+        borderStyle: BorderStyle.solid,
       ),
       child: CheckboxListTile(
         value: isDone,
         tileColor: _tileColor(isDone!),
         onChanged: (isChanged) {},
         controlAffinity: ListTileControlAffinity.trailing,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.all(Radius.circular(16.0)),
-        ),
+        shape: TaskCardShape.roundRectangleBorder(),
         title: Text(taskTitle),
         subtitle: Row(
           children: [
