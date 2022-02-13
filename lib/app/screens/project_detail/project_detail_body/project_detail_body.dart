@@ -28,6 +28,9 @@ class ProjectDetailBody extends StatelessWidget {
               child: Text('Attachment'),
             ),
           ),
+          Expanded(
+            child: ProjectDetailAttachment(),
+          ),
         ],
       ),
     );

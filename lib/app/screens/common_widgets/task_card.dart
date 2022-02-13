@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class TaskCard extends StatelessWidget {
@@ -35,6 +36,9 @@ class TaskCard extends StatelessWidget {
         tileColor: _tileColor(isDone!),
         onChanged: (isChanged) {},
         controlAffinity: ListTileControlAffinity.trailing,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.all(Radius.circular(16.0)),
+        ),
         title: Text(taskTitle),
         subtitle: Row(
           children: [
