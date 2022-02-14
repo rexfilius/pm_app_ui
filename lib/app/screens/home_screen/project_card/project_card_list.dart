@@ -6,9 +6,7 @@ class ProjectCardList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
-      scrollDirection: Axis.horizontal,
-      shrinkWrap: true,
+    return Row(
       children: const [
         ProjectCard(),
         ProjectCard(),

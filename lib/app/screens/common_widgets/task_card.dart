@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pm_app_ui/app/screens/common_widgets/task_card_shape.dart';
+import 'package:pm_app_ui/app/screens/common_widgets/card_shape.dart';
 
 class TaskCard extends StatelessWidget {
   final String taskTitle;
@@ -24,7 +24,7 @@ class TaskCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      shape: TaskCardShape.roundRectangleBorder(
+      shape: CardShape.roundRectangleBorder(
         color: Colors.black,
         borderStyle: BorderStyle.solid,
       ),
@@ -33,7 +33,7 @@ class TaskCard extends StatelessWidget {
         tileColor: _tileColor(isDone!),
         onChanged: (isChanged) {},
         controlAffinity: ListTileControlAffinity.trailing,
-        shape: TaskCardShape.roundRectangleBorder(),
+        shape: CardShape.roundRectangleBorder(),
         title: Text(taskTitle),
         subtitle: Row(
           children: [

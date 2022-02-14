@@ -7,12 +7,12 @@ class NavScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setSystemUIOverlayStyle(
-      const SystemUiOverlayStyle(
-        statusBarColor: Color(0xff3d35a4),
-        systemNavigationBarColor: Color(0xff3d35a4),
-      ),
-    );
+    // SystemChrome.setSystemUIOverlayStyle(
+    //   const SystemUiOverlayStyle(
+    //     statusBarColor: Color(0xff3d35a4),
+    //     systemNavigationBarColor: Color(0xff3d35a4),
+    //   ),
+    // );
 
     return Scaffold(
       appBar: AppBar(

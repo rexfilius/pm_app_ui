@@ -15,8 +15,8 @@ class HomeScreenBottomBarItem extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
-        Expanded(child: Icon(icon)),
-        Expanded(child: Text(label)),
+        Icon(icon),
+        Text(label),
       ],
     );
   }

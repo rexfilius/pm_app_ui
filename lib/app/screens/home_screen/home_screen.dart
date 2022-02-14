@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:pm_app_ui/app/screens/screens.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -6,59 +8,64 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // SystemChrome.setSystemUIOverlayStyle(
+    //   const SystemUiOverlayStyle(
+    //     statusBarColor: Color(0xff3d35a4),
+    //     systemNavigationBarColor: Color(0xffffffff),
+    //   ),
+    // );
+    // bottomNavigationBar: const SizedBox(
+    //         height: 90,
+    //         width: 90,
+    //         child: HomeScreenBottomBar(),
+    //       ),
     return Scaffold(
       backgroundColor: const Color(0xff3d35a4),
       appBar: const HomeScreenAppBar(profileName: 'Lindsay'),
-      body: Padding(
-        padding: const EdgeInsets.only(
-          left: 8.0,
-          right: 8.0,
-          top: 16.0,
+      body: Container(
+        decoration: const BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.only(
+            topLeft: Radius.circular(32.0),
+            topRight: Radius.circular(32.0),
+          ),
         ),
-        child: Container(
-          decoration: const BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(32.0),
-              topRight: Radius.circular(32.0),
+        child: Column(
+          children: const [
+            HomeScreenHeader(
+              firstTitle: 'Recent Tasks',
+              secondTitle: 'All Task',
             ),
-          ),
-          child: Column(
-            children: const [
-              HomeScreenHeader(
-                firstTitle: 'Recent Tasks',
-                secondTitle: 'All Task',
-              ),
-              TaskCardList(),
-              HomeScreenHeader(
-                firstTitle: 'Ongoing Projects',
-                secondTitle: 'All Project',
-              ),
-            ],
-          ),
+            TaskCardList(),
+            HomeScreenHeader(
+              firstTitle: 'Ongoing Projects',
+              secondTitle: 'All Project',
+            ),
+          ],
         ),
       ),
     );
   }
 }
 
-/// bottomNavigationBar: BottomNavigationBar(
-//         items: const [
-//           BottomNavigationBarItem(
-//             icon: Icon(Icons.home_filled),
-//             label: 'Home',
+// Expanded(
+//               child: SingleChildScrollView(
+//                 scrollDirection: Axis.horizontal,
+//                 child: ProjectCardList(),
+//               ),
+//             ),
+
+// Container(
+//         padding: const EdgeInsets.only(
+//           left: 8.0,
+//           right: 8.0,
+//           top: 16.0,
+//         ),
+//         decoration: const BoxDecoration(
+//           color: Colors.white,
+//           borderRadius: BorderRadius.only(
+//             topLeft: Radius.circular(32.0),
+//             topRight: Radius.circular(32.0),
 //           ),
-//           BottomNavigationBarItem(
-//             icon: Icon(Icons.check_box_outlined),
-//             label: 'My Tasks',
-//           ),
-//           BottomNavigationBarItem(
-//             icon: Icon(Icons.search_rounded),
-//             label: 'Search',
-//           ),
-//           BottomNavigationBarItem(
-//             icon: Icon(Icons.notifications),
-//             label: 'Inbox',
-//           ),
-//         ],
-//       ),
+//         ),
+//         child:
